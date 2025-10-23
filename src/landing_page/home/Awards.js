@@ -13,7 +13,7 @@ function Awards() {
                     <div className="row">
                         <div className="col-md-6 col-12">
                             <ul>
-                                <li>Future and options</li>
+                                <li>Future and Options</li>
                                 <li>Commodity Derivatives</li>
                                 <li>Currency Derivatives</li>
                                 <li>Index Derivatives</li>
