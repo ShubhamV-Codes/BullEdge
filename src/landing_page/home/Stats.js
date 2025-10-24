@@ -9,7 +9,7 @@ function Stats() {
                     <h2 className="fs-4"> Customer-First Always </h2>
                     <p className="text-muted"> That's Why 13 Million Customers Trust BullEdge with $766 Million Worth of Equity Investments</p>
 
-                    <h2 className="fs-4"> No Sam or Gimmicks </h2>
+                    <h2 className="fs-4"> No Spam or Gimmicks </h2>
                     <p className="text-muted">No gimmicks, spam, "gammification", or annoying push notifications. High Quality apps that you use at your pace, the way you like.</p>
 
                     <h2 className="fs-4"> The BullEdge Universe </h2>
@@ -20,7 +20,7 @@ function Stats() {
 
 
                 </div>
-                <div className="col-md-6 col-12 p-5">
+                <div className="col-md-6 col-12 ">
                     <img src="media/images/ecosystem.png" style={{ width: "90%" }} />
                     <div className="text-center">
                         <a href="" style={{ textDecoration: "none" }} className="mx-5">Explore Our Product <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
