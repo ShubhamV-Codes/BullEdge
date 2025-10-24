@@ -15,7 +15,7 @@ function Pricing
                     <div className="row text-center">
                         <div className="col p-2 border-end">
                             <h1 className="mb-3"> ₹0 </h1>
-                            <p>Free equity delivery and <br/> direct mutual funds</p>
+                            <p>Free equity delivery and <br/> direct mutual funds </p>
                         </div>
                         <div className="col p-2 ">
                             <h1 className="mb-3">₹20</h1>
