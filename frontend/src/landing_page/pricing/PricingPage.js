@@ -8,11 +8,11 @@ import Navbar from '../Navbar';
 function PricingPages() {
     return ( 
             <>
-              <Navbar/>
+             
               <Hero/>
               <Brokerage/>
               <OpenAccount/>
-              <Footer/>
+              
             </>
      );
 }
