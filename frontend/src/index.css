@@ -70,3 +70,17 @@ code {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+/* TextOver Class */
+.textOver {
+  font-size: 0.875rem !important;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .textOver {
+    font-size: 0.8125rem;
+  }
+}
