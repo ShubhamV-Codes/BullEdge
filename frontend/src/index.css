@@ -84,3 +84,121 @@ code {
     font-size: 0.8125rem;
   }
 }
+.support-links{
+  margin-bottom: 6px !important;
+}
+.support-links:hover{
+  color : rgb(169, 114, 72) !important;
+}
+
+/* Support Hero Section */
+.support-hero {
+    background: linear-gradient(135deg,rgb(169, 114, 72) 0%, #5a9de8 100%);
+    color: white;
+    
+}
+
+/* Search Section */
+.search-heading {
+    color: white;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.search-input {
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.search-input:focus {
+    outline: none;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Help Links */
+.help-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.help-link {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.help-link:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* Featured Section */
+.featured-heading {
+    color: white;
+    font-weight: 400;
+}
+
+.featured-list {
+    padding-left: 20px;
+    color: white;
+}
+
+.featured-list li {
+    line-height: 1.8;
+}
+
+.featured-link {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.featured-link:hover {
+    color: white;
+    opacity: 0.85;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .support-hero {
+        min-height: auto;
+    }
+    
+    .support-title {
+        font-size: 1.5rem;
+    }
+    
+    .help-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .support-hero .d-flex {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 1rem;
+    }
+    
+    .support-title {
+        font-size: 1.25rem;
+    }
+    
+    .search-input {
+        font-size: 0.9rem;
+        padding: 12px 15px;
+    }
+}
