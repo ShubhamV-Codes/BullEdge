@@ -2,65 +2,82 @@ require("dotenv").config();
 
 const express = require("express");
 const mongoose = require("mongoose");
-const bodyParser =require("body-parser");
 const cors = require("cors");
 
-const {HoldingModel} = require("./model/HoldingModel");
-const {PositionModel} = require("./model/PositionModel");
-const {OrderModel} = require("./model/OrderModel");
- 
+const { HoldingModel } = require("./model/HoldingModel");
+const { PositionModel } = require("./model/PositionModel");
+const { OrderModel } = require("./model/OrderModel");
+
+const authRoutes = require("./routes/authRoutes");
+
 const PORT = process.env.PORT || 8080;
-const uri = process.env.MONGO_URL;
+const MONGO_URI = process.env.MONGO_URL;
 
 const app = express();
 
+// Middlewares
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json());  // replaces body-parser
 
-mongoose.connect(uri)
-.then(() => {
-    console.log("Connected to MongoDB");
-})
-.catch((err) => {
-    console.error("Error connecting to MongoDB", err);
-});
+// MongoDB Connection
+mongoose
+  .connect(MONGO_URI)
+  .then(() => console.log("✅ Connected to MongoDB"))
+  .catch((err) => console.error("❌ MongoDB Error:", err));
 
-app.get("/allHoldings",async (req,res)=>{
-    let allHoldings = await HoldingModel.find({});
+// ---------- AUTH ROUTES ----------
+app.use("/auth", authRoutes);
+
+// ---------- DATA ROUTES ----------
+
+// Get all holdings
+app.get("/allHoldings", async (req, res) => {
+  try {
+    const allHoldings = await HoldingModel.find({});
     res.json(allHoldings);
+  } catch (err) {
+    res.status(500).json({ error: "Failed to fetch holdings" });
+  }
 });
 
-app.get("/allPositions",async (req,res)=>{
-    let allPositions = await PositionModel.find({});
+// Get all positions
+app.get("/allPositions", async (req, res) => {
+  try {
+    const allPositions = await PositionModel.find({});
     res.json(allPositions);
+  } catch (err) {
+    res.status(500).json({ error: "Failed to fetch positions" });
+  }
 });
 
-app.post("/newOrder", async(req,res)=>{
-    let newOrder = new OrderModel({
-        name:req.body.name,
-        qty:req.body.qty,
-        price:req.body.price,
-        mode:req.body.mode
+// Add new order
+app.post("/newOrder", async (req, res) => {
+  try {
+    const newOrder = new OrderModel({
+      name: req.body.name,
+      qty: req.body.qty,
+      price: req.body.price,
+      mode: req.body.mode,
     });
-    newOrder.save();
-    res.send("Order Saved");
 
+    await newOrder.save();
+    res.json({ message: "✅ Order Saved" });
+  } catch (err) {
+    res.status(500).json({ error: "Failed to save order" });
+  }
 });
 
-// Delete an order (for testing)
+// Delete order
 app.delete("/deleteOrder/:id", async (req, res) => {
   try {
     await OrderModel.findByIdAndDelete(req.params.id);
-    res.json({ message: "Order deleted successfully" });
+    res.json({ message: "✅ Order deleted successfully" });
   } catch (error) {
-    console.error("Error deleting order:", error);
     res.status(500).json({ error: "Failed to delete order" });
   }
 });
 
-
-
-app.listen(PORT, ()=>{
-    console.log(`Server is running on port ${PORT}`);
-    mongoose.connect(uri);
-})
+// ---------- START SERVER ----------
+app.listen(PORT, () => {
+  console.log(`✅ Server running on port ${PORT}`);
+});
