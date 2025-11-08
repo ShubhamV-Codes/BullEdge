@@ -8,10 +8,30 @@ function Footer() {
           <a className="navbar-brand " href="/"><img src="media/images/bull-market (1).png" style={{ width: "40px", height: "30px" }} alt="BullEdge_logo" /> <b className="p-2">BullEdge </b></a>
           <p className="mt-3"><b>BullEdge:</b> <i>A Fintech Corp.&copy;</i> <br /> &nbsp; &nbsp; &nbsp;All rights reserved. </p>
 
-          <a className="fa-brands fa-x-twitter ms-4 social-media-icons" href="#"></a> &nbsp;
-          <a className="fa-brands fa-instagram ms-3 social-media-icons" href="#"></a> &nbsp;
-          <a className="fa-brands fa-youtube ms-3 social-media-icons" href="#"></a>
-        </div>
+          <a
+  href="https://x.com/bulledgedotcom"
+  className="fa-brands fa-x-twitter ms-4 social-media-icons"
+  aria-label="Twitter"
+  target="_blank"
+  rel="noopener noreferrer"
+></a>
+
+<a
+  href="https://instagram.com/bulledgedotcom"
+  className="fa-brands fa-instagram ms-3 social-media-icons"
+  aria-label="Instagram"
+  target="_blank"
+  rel="noopener noreferrer"
+></a>
+
+<a
+  href="https://youtube.com/@bulledgedotcom"
+  className="fa-brands fa-youtube ms-3 social-media-icons"
+  aria-label="YouTube"
+  target="_blank"
+  rel="noopener noreferrer"
+></a>
+</div>
 
 
         <div className="col-md-3 col-6 mb-3 p-4 company-nav-links">
