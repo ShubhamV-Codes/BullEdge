@@ -5,7 +5,7 @@ function Team() {
             <h3 className="p-4 text-center">Profile</h3>
             <div className="row">
             <div className="col-md-5 col-12">
-            <div className=" my-img"> <img src="media/images/MyPhoto.jpg"
+            <div className=" my-img"> <img src="media/images/MyPhoto.jpg" alt="Shubham Vishwakarma"
             /></div>
             <h5 className="mt-3 mb-3 text-center">Shubham Vishwakarma</h5>
             <p className="text-muted text-center mb-5">Founder,CEO</p>

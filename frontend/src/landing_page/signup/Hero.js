@@ -9,7 +9,7 @@ function Hero() {
             <div className="row mt-3">
                 <div className="col-md-12 col-12 p-3 text-center"></div>
                 <div className="col-md-12 col-12 p-3">
-                <img src="media/images/account_open.svg" style={{width:"70%" ,display: "block", margin: "0 auto"}}/>
+                <img src="media/images/account_open.svg" style={{width:"70%" ,display: "block", margin: "0 auto"}} alt="Account Open"/>
                 </div>
 
             
