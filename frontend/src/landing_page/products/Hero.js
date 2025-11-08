@@ -9,8 +9,8 @@ function Hero() {
       </p>
       <p className="mb-5">
         
-        Check out our
-        <Link to="/" style={{ textDecoration: "none" }}>
+        Check out our &nbsp;
+        <Link to="https://bull-edge-kite.vercel.app/" style={{ textDecoration: "none" }}>
           investment offerings →
         </Link>
       </p>

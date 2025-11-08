@@ -1,6 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // ✅ import navigation hook
+
 
 function Demat() {
+  const navigate = useNavigate();
+
   return (
     <div className="container">
       <div className="row mt-5 mb-5">
@@ -71,7 +75,7 @@ function Demat() {
         </div>
       </div>
       <div className="row">
-        <button className="pt-2 btn btn-primary signup-btn fs-5 mb-4 mt-5 ">
+        <button className="pt-2 btn btn-primary signup-btn fs-5 mb-4 mt-5" onClick={() => navigate("/not-available")} >
           Explore Investments
         </button>
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
-
-function LeftSection({ imageURL, productName, productDescription, learnMore }) {
+function RightSection({ imageURL, productName, productDescription, learnMore }) {
   return (
     <div className="container">
       <div className="row ">
@@ -17,7 +16,7 @@ function LeftSection({ imageURL, productName, productDescription, learnMore }) {
               }}
               className="text-center mb-5"
             >
-              Learn More →
+              Check it out →
             </a>
           </div>
         </div>
@@ -31,4 +30,4 @@ function LeftSection({ imageURL, productName, productDescription, learnMore }) {
   );
 }
 
-export default LeftSection;
+export default RightSection;

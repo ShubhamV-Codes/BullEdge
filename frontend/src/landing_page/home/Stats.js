@@ -23,8 +23,8 @@ function Stats() {
                 <div className="col-md-6 col-12 ">
                     <img src="media/images/ecosystem.png" style={{ width: "90%" }} />
                     <div className="text-center">
-                        <a href="" style={{ textDecoration: "none" }} className="mx-5">Explore Our Product <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                        <a href="" style={{ textDecoration: "none" }}>Try Kite</a>
+                        <a href="/product" style={{ textDecoration: "none" }} className="mx-5">Explore Our Product <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        <a href="https://bull-edge-kite.vercel.app" style={{ textDecoration: "none" }}>Try Kite <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
 

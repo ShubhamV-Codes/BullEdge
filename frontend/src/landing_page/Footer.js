@@ -5,39 +5,39 @@ function Footer() {
     <div className="container border-top mt-5">
       <div className="row">
         <div className="col-md-3 col-6 md-5 mt-4">
-          <a className="navbar-brand " href="#"><img src="media/images/bull-market (1).png" style={{ width: "40px", height: "30px" }} alt="BullEdge_logo" /> <b className="p-2">BullEdge </b></a>
+          <a className="navbar-brand " href="/"><img src="media/images/bull-market (1).png" style={{ width: "40px", height: "30px" }} alt="BullEdge_logo" /> <b className="p-2">BullEdge </b></a>
           <p className="mt-3"><b>BullEdge:</b> <i>A Fintech Corp.&copy;</i> <br /> &nbsp; &nbsp; &nbsp;All rights reserved. </p>
 
-          <a className="fa-brands fa-x-twitter ms-4 social-media-icons" href=""></a> &nbsp;
-          <a className="fa-brands fa-instagram ms-3 social-media-icons" href=""></a> &nbsp;
-          <a className="fa-brands fa-youtube ms-3 social-media-icons" href=""></a>
+          <a className="fa-brands fa-x-twitter ms-4 social-media-icons" href="https://twitter.com/bulledgedotcom"></a> &nbsp;
+          <a className="fa-brands fa-instagram ms-3 social-media-icons" href="https://www.instagram.com/bulledgedotcom/"></a> &nbsp;
+          <a className="fa-brands fa-youtube ms-3 social-media-icons" href="https://www.youtube.com/@bulledgedotcom"></a>
         </div>
 
 
         <div className="col-md-3 col-6 mb-3 p-4 company-nav-links">
 
           <h5>Company</h5>
-          <a href="#">About </a><br />
-          <a href="#">Product</a><br />
-          <a href="#">Pricing</a><br />
-          <a href="#">Careers</a><br />
-          <a href="#">Referral Programme</a><br />
+          <a href="/about">About </a><br />
+          <a href="/product">Product</a><br />
+          <a href="/pricing">Pricing</a><br />
+          <a href="/not-available">Careers</a><br />
+          <a href="/not-available">Referral Programme</a><br />
 
         </div>
         <div className="col-md-3 col-6 p-4 support-nav-links">
 
           <h5>Support</h5>
           <a href="#"> Contact </a><br />
-          <a href="#"> Support Portal </a><br />
-          <a href="#"> Z-Connect blog </a><br />
-          <a href="#"> List of charges </a><br />
-          <a href="#"> Download & resources </a><br />
+          <a href="/not-available"> Support Portal </a><br />
+          <a href="/not-available"> B-Connect blog </a><br />
+          <a href="/not-available"> List of charges </a><br />
+          <a href="/not-available"> Download & resources </a><br />
         </div>
         <div className="col-md-3 col-6 p-4 account-nav-links">
           <h5>Account</h5>
-          <Link to="/"> Open a account </Link><br />
-          <Link to="/">Fund Transfer </Link><br />
-          <Link to="/"> 60 Days challenge </Link><br />
+          <Link to="/register"> Open a account </Link><br />
+          <Link to="/not-available">Fund Transfer </Link><br />
+          <Link to="/not-available"> 60 Days challenge </Link><br />
         </div>
       </div>
 

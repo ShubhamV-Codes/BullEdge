@@ -10,9 +10,11 @@ function Hero() {
           Online Platform to invest in Stocks, derivatives, Mutual Funds and
           more
         </p>
-        <button className="pt-2` btn btn-primary signup-btn fs-5 mb-4 ">
-          Signup Now
-        </button>
+        <a href="/register" style={{ textDecoration: "none" }}>
+          <button className="pt-2 btn btn-primary signup-btn fs-5 mb-4 ">
+            Signup Now
+          </button>
+        </a>
       </div>
     </div>
   );

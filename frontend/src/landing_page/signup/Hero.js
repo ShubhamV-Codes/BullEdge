@@ -7,16 +7,13 @@ function Hero() {
                 <h5 className="text-muted text-center mt-4 mb-4 fs-5">Start investing brokerage free and join a community of 1.6+ crore investors and traders</h5>
             </div>
             <div className="row mt-3">
-                <div className="col-md-1"></div>
-                <div className="col-md-5 col-12 p-3">
-                <img src="media/images/account_open.svg"/>
+                <div className="col-md-12 col-12 p-3 text-center"></div>
+                <div className="col-md-12 col-12 p-3">
+                <img src="media/images/account_open.svg" style={{width:"70%" ,display: "block", margin: "0 auto"}}/>
                 </div>
 
-                <div className="col-md-5 col-12">
-                  <h1 className="text-center fs-2">
-                    Signup Now </h1>  
-                </div>
-                 <div className="col-md-1"></div>
+            
+                 
             </div>
 
 

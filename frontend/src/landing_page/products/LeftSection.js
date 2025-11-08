@@ -21,7 +21,7 @@ function LeftSection({ imageURL, productName, productDescription, learnMore }) {
               }}
               className="text-center"
             >
-              Learn More →
+             Check it out →
             </a>
           </div>
         </div>
