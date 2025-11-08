@@ -47,7 +47,7 @@ function Footer() {
         <div className="col-md-3 col-6 p-4 support-nav-links">
 
           <h5>Support</h5>
-          <a href="#"> Contact </a><br />
+          <a href="/not-available"> Contact </a><br />
           <a href="/not-available"> Support Portal </a><br />
           <a href="/not-available"> B-Connect blog </a><br />
           <a href="/not-available"> List of charges </a><br />
