@@ -40,7 +40,7 @@ function AppWrapper() {
   const knownRoutes = ["/", "/about", "/product", "/pricing", "/support", "/signup"];
 
   // ✅ Define auth or restricted pages
-  const isAuthPage = ["/login", "/register", "/not-available"].includes(path);
+  const isAuthPage = ["/login", "/register", "/not-available"].includes(path); 
 
   // ✅ Detect if current route is unknown (404)
   const is404Page = !knownRoutes.includes(path) && !isAuthPage;
