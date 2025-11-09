@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Orders = () => {
@@ -7,7 +6,7 @@ const Orders = () => {
       <div className="no-orders">
         <p>You haven't placed any orders today</p>
 
-        <Link to={"/"} className="btn">
+        <Link to={"https://bull-edge.vercel.app/register"} className="btn">
           Get started
         </Link>
       </div>

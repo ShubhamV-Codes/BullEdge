@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { TrendingUp, AccountBalanceWallet, PieChart } from "@mui/icons-material";
 
 const Summary = () => {

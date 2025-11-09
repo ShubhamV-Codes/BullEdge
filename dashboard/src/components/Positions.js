@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "../utils/axiosSetup";
 import { Refresh } from "@mui/icons-material";
 import { positions as defaultPositions } from "../data/data";
@@ -59,7 +59,7 @@ const Positions = () => {
       margin: 0,
     },
     refreshButton: {
-      background: "linear-gradient(135deg, #be4b4b 0%, #ff0f0f 100%)",
+      background: "linear-gradient(135deg, #ffa486ff 0%, #ff0f0f 100%)",
       color: "white",
       border: "none",
       padding: "10px 20px",
@@ -87,7 +87,7 @@ const Positions = () => {
     th: {
       textAlign: "left",
       padding: "14px",
-      background: "linear-gradient(135deg, #be4b4b 0%, #ff0f0f 100%)",
+      background: "linear-gradient(135deg, #ffa486ff 0%, #ff0f0f 100%)",
       color: "white",
       fontWeight: "600",
       fontSize: "0.8rem",

@@ -1,4 +1,3 @@
-import React from "react";
 import { TrendingUp, TrendingDown } from "@mui/icons-material";
 import Menu from "./Menu";
 

@@ -1,5 +1,12 @@
 export const watchlist = [
   {
+    name:"VISTARA",
+    price: 320.5,
+    percent: "0.47%",
+    isDown: false,
+  },
+
+  {
     name: "INFY",
     price: 1555.45,
     percent: "-1.60%",
@@ -51,6 +58,37 @@ export const watchlist = [
     name: "HUL",
     price: 512.4,
     percent: "1.04%",
+    isDown: false,
+  },
+  // Added stocks below
+  {
+    name: "TATASTEEL",
+    price: 128.9,
+    percent: "-0.72%",
+    isDown: true,
+  },
+  {
+    name: "BAJFINANCE",
+    price: 6855.6,
+    percent: "2.10%",
+    isDown: false,
+  },
+  {
+    name: "ADANIPORTS",
+    price: 912.3,
+    percent: "-0.45%",
+    isDown: true,
+  },
+  {
+    name: "SBIN",
+    price: 589.65,
+    percent: "0.58%",
+    isDown: false,
+  },
+  {
+    name: "HDFC",
+    price: 2754.2,
+    percent: "0.91%",
     isDown: false,
   },
 ];

@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Apps from "./Apps";
@@ -9,6 +8,9 @@ import Orders from "./Orders";
 import Positions from "./Positions";
 import Summary from "./Summary";
 import WatchList from "./WatchList";
+import NotFound from "./NotFound";
+import NotAvailable from "./NotAvailable";
+
 import { GeneralContextProvider } from "./GeneralContext";
 
 const Dashboard = () => {
@@ -25,6 +27,8 @@ const Dashboard = () => {
           <Route path="/positions" element={<Positions />} />
           <Route path="/funds" element={<Funds />} />
           <Route path="/apps" element={<Apps />} />
+          <Route path="/not-available" element={<NotAvailable />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </div>

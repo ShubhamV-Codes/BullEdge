@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "../utils/axiosSetup";
-import { TrendingUp, TrendingDown, Refresh } from "@mui/icons-material";
+import { Refresh } from "@mui/icons-material";
 
 // ✅ Import Dummy Holdings
 import { holdings as defaultHoldings } from "../data/data";
@@ -77,7 +77,7 @@ const Holdings = () => {
       margin: 0,
     },
     refreshButton: {
-      background: "linear-gradient(135deg, #be4b4b 0%, #ff0f0f 100%)",
+      background: "linear-gradient(135deg, #ef8968ff 0%, #ff0f0f 100%)",
       color: "white",
       border: "none",
       padding: "10px 20px",
@@ -104,7 +104,7 @@ const Holdings = () => {
     },
     th: {
       padding: "14px",
-      background: "linear-gradient(135deg, #be4b4b 0%, #ff0f0f 100%)",
+      background: "linear-gradient(135deg, #ffa486ff 0%, #ff0f0f 100%)",
       color: "white",
       fontSize: "0.8rem",
       fontWeight: "600",

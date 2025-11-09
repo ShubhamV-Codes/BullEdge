@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import { useState, useContext } from "react";
 import { Tooltip, Grow } from "@mui/material";
 import { KeyboardArrowUp, KeyboardArrowDown, BarChartOutlined, MoreHoriz } from "@mui/icons-material";
 import { watchlist } from "../data/data";
@@ -12,7 +12,7 @@ const WatchList = () => {
           type="text"
           name="search"
           id="search"
-          placeholder="Search eg:infy, bse, nifty fut weekly, gold mcx"
+          placeholder="Search eg : INFY, BSE, NIFTY 50, GOLD"
           className="search"
         />
         <span className="counts">{watchlist.length}/50</span>
