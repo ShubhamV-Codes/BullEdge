@@ -1,90 +1,168 @@
-import React from 'react';
-import { Link} from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
-    <div className="container border-top mt-5">
-      <div className="row">
-        <div className="col-md-3 col-6 md-5 mt-4">
-          <a className="navbar-brand " href="/"><img src="media/images/bull-market (1).png" style={{ width: "40px", height: "30px" }} alt="BullEdge_logo" /> <b className="p-2">BullEdge </b></a>
-          <p className="mt-3"><b>BullEdge:</b> <i>A Fintech Corp.&copy;</i> <br /> &nbsp; &nbsp; &nbsp;All rights reserved. </p>
+    <>
+      <style>{`
+        .footer-section {
+          background: linear-gradient(135deg, #ffffff 0%, #f8f9fb 100%);
+          border-top: 1px solid #e0e0e0;
+          padding: 4rem 2rem 2rem;
+          margin-top: 4rem;
+        }
 
-          {/* <a
-  href="https://x.com/bulledgedotcom"
-  className="fa-brands fa-x-twitter ms-4 social-media-icons"
-  aria-label="Twitter"
-  target="_blank"
-  rel="noopener noreferrer"
-></a>
+        .footer-logo img {
+          width: 40px;
+          height: 30px;
+        }
 
-<a
-  href="https://instagram.com/bulledgedotcom"
-  className="fa-brands fa-instagram ms-3 social-media-icons"
-  aria-label="Instagram"
-  target="_blank"
-  rel="noopener noreferrer"
-></a>
+        .footer-logo-text {
+          font-weight: 700;
+          font-size: 1.25rem;
+          color: #1a1a1a;
+          text-decoration: none;
+        }
 
-<a
-  href="https://youtube.com/@bulledgedotcom"
-  className="fa-brands fa-youtube ms-3 social-media-icons"
-  aria-label="YouTube"
-  target="_blank"
-  rel="noopener noreferrer"
-></a> */}
-</div>
+        .footer-description {
+          font-size: 0.95rem;
+          color: #555;
+          line-height: 1.6;
+          margin-top: 1rem;
+        }
 
+        .footer-heading {
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: #1a1a1a;
+          margin-bottom: 1rem;
+        }
 
-        <div className="col-md-3 col-6 mb-3 p-4 company-nav-links">
+        .footer-link {
+          display: block;
+          font-size: 0.95rem;
+          color: #555;
+          text-decoration: none;
+          margin-bottom: 0.5rem;
+          transition: color 0.2s ease;
+        }
 
-          <h5>Company</h5>
-          <a href="/about">About </a><br />
-          <a href="/product">Product</a><br />
-          <a href="/pricing">Pricing</a><br />
-          <a href="/not-available">Careers</a><br />
-          <a href="/not-available">Referral Programme</a><br />
+        .footer-link:hover {
+          color: #0d6efd;
+        }
 
+        .footer-bottom {
+          border-top: 1px solid #e0e0e0;
+          text-align: center;
+          margin-top: 3rem;
+          padding-top: 1rem;
+          font-size: 0.9rem;
+          color: #888;
+        }
+
+        .social-links {
+          margin-top: 1rem;
+        }
+
+        .social-icon {
+          font-size: 1.2rem;
+          color: #555;
+          margin-right: 1rem;
+          transition: color 0.2s ease;
+        }
+
+        .social-icon:hover {
+          color: #0d6efd;
+        }
+
+        @media (max-width: 768px) {
+          .footer-section {
+            padding: 3rem 1rem;
+          }
+          .footer-heading {
+            margin-top: 2rem;
+          }
+        }
+      `}</style>
+
+      <footer className="footer-section container-fluid">
+        <div className="container">
+          <div className="row">
+            {/* --- Logo + Description --- */}
+            <div className="col-md-3 col-12 mb-4">
+              <div className="footer-logo">
+                <a href="/" className="d-flex align-items-center text-decoration-none">
+                  <img src="media/images/bull-market (1).png" alt="BullEdge Logo" />
+                  <span className="footer-logo-text ms-2">BullEdge</span>
+                </a>
+              </div>
+              <p className="footer-description mt-3">
+                <strong>BullEdge:</strong> <i>A Fintech Corp.&copy;</i>
+                <br />
+                Empowering investors with modern tools and transparent pricing.
+              </p>
+
+              <div className="social-links">
+                <a
+                  href="https://x.com/bulledgedotcom"
+                  className="social-icon fa-brands fa-x-twitter"
+                  aria-label="Twitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                ></a>
+                <a
+                  href="https://instagram.com/bulledgedotcom"
+                  className="social-icon fa-brands fa-instagram"
+                  aria-label="Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                ></a>
+                <a
+                  href="https://youtube.com/@bulledgedotcom"
+                  className="social-icon fa-brands fa-youtube"
+                  aria-label="YouTube"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                ></a>
+              </div>
+            </div>
+
+            {/* --- Company Links --- */}
+            <div className="col-md-3 col-6 mb-3">
+              <h5 className="footer-heading">Company</h5>
+              <a href="/about" className="footer-link">About</a>
+              <a href="/product" className="footer-link">Product</a>
+              <a href="/pricing" className="footer-link">Pricing</a>
+              <a href="/not-available" className="footer-link">Careers</a>
+              <a href="/not-available" className="footer-link">Referral Program</a>
+            </div>
+
+            {/* --- Support Links --- */}
+            <div className="col-md-3 col-6 mb-3">
+              <h5 className="footer-heading">Support</h5>
+              <a href="/not-available" className="footer-link">Contact</a>
+              <a href="/not-available" className="footer-link">Support Portal</a>
+              <a href="/not-available" className="footer-link">B-Connect Blog</a>
+              <a href="/not-available" className="footer-link">List of Charges</a>
+              <a href="/not-available" className="footer-link">Downloads & Resources</a>
+            </div>
+
+            {/* --- Account Links --- */}
+            <div className="col-md-3 col-12 mb-3">
+              <h5 className="footer-heading">Account</h5>
+              <Link to="/register" className="footer-link">Open an Account</Link>
+              <Link to="/not-available" className="footer-link">Fund Transfer</Link>
+              <Link to="/not-available" className="footer-link">60-Day Challenge</Link>
+            </div>
+          </div>
+
+          {/* --- Bottom Text --- */}
+          <div className="footer-bottom">
+            © {new Date().getFullYear()} BullEdge. All rights reserved. Built with ❤️ for investors.
+          </div>
         </div>
-        <div className="col-md-3 col-6 p-4 support-nav-links">
-
-          <h5>Support</h5>
-          <a href="/not-available"> Contact </a><br />
-          <a href="/not-available"> Support Portal </a><br />
-          <a href="/not-available"> B-Connect blog </a><br />
-          <a href="/not-available"> List of charges </a><br />
-          <a href="/not-available"> Download & resources </a><br />
-        </div>
-        <div className="col-md-3 col-6 p-4 account-nav-links">
-          <h5>Account</h5>
-          <Link to="/register"> Open a account </Link><br />
-          <Link to="/not-available">Fund Transfer </Link><br />
-          <Link to="/not-available"> 60 Days challenge </Link><br />
-        </div>
-      </div>
-
-      {/* <div className="row mt-5 fs-6 text-small text-muted ">
-
-        <p>
-          BullEdge is a fintech platform designed to make investing and trading simple, accessible, and effective for everyone.
-          By combining market insights, real-time analytics, and powerful tools into one clean, easy-to-use dashboard,
-          we aim to provide users with everything they need to make informed financial decisions.
-        </p>
-
-        <p>
-          Our platform offers transparent pricing, performance tracking, and up-to-the-minute data, putting control firmly in your hands.
-          We focus on clarity, not clutter, ensuring that every feature is intuitive and easy to understand.
-
-        </p>
-
-        <p>
-          At BullEdge, innovation drives everything we do. Our platform continuously evolves to incorporate advanced analytics, risk management tools, and personalized insights, giving users a competitive edge in the financial markets.
-          We prioritize security and reliability, ensuring that every transaction and data point is protected with industry-standard protocols.
-          .
-        </p>
-
-      </div> */}
-
-    </div>
-
+      </footer>
+    </>
   );
 }
 

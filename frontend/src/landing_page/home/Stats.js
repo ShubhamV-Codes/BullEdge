@@ -1,36 +1,107 @@
-import React from 'react'
+import React from "react";
+
 function Stats() {
-    return (
-        <div className="container p-2">
-            <div className="row p-3">
-                <div className="col-md-6 col-12 pt-5 pb-5 pr-5">
-                    <h1 className="fs-2 mb-5">Trust With Confidence</h1>
+  return (
+    <>
+      <style>{`
+        .stats-section {
+          background: linear-gradient(135deg, #ffffff 0%, #f8f9fb 100%);
+          border-radius: 20px;
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+          padding: 3rem 2rem;
+          margin-top: 3rem;
+        }
 
-                    <h2 className="fs-4"> Customer-First Always </h2>
-                    <p className="text-muted"> That's Why 13 Million Customers Trust BullEdge with $766 Million Worth of Equity Investments</p>
+        .stats-heading {
+          font-size: 2.3rem;
+          font-weight: 700;
+          color: #1a1a1a;
+          margin-bottom: 2rem;
+        }
 
-                    <h2 className="fs-4"> No Spam or Gimmicks </h2>
-                    <p className="text-muted">No gimmicks, spam, "gammification", or annoying push notifications. High Quality apps that you use at your pace, the way you like.</p>
+        .stats-subheading {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: #0d6efd;
+          margin-top: 1.5rem;
+        }
 
-                    <h2 className="fs-4"> The BullEdge Universe </h2>
-                    <p className="text-muted">Not Just an app, but a whole ecosystem. Our Investments in 30+ Fintech startups offer you tailored services specific to you needs.</p>
+        .stats-text {
+          font-size: 1.05rem;
+          color: #555;
+          line-height: 1.8;
+        }
 
-                    <h2 className="fs-4"> Do Better with Money  </h2>
-                    <p className="text-muted"> With Initiatives like Nudes and Kill Switch, we don't just facilitate transactions, but actively help you do better with your money.</p>
+        .stats-image {
+          max-width: 90%;
+          filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.08));
+        }
 
+        .stats-link {
+          color: #0d6efd;
+          font-weight: 600;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          margin: 0 1rem;
+        }
 
-                </div>
-                <div className="col-md-6 col-12 ">
-                    <img src="media/images/ecosystem.png" style={{ width: "90%" }} alt="Ecosystem" />
-                    <div className="text-center">
-                        <a href="/product" style={{ textDecoration: "none" }} className="mx-5">Explore Our Product <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                        <a href="https://bull-edge-kite.vercel.app" style={{ textDecoration: "none" }}>Try Kite <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
+        .stats-link:hover {
+          color: #084298;
+        }
 
+        @media (max-width: 768px) {
+          .stats-heading { font-size: 1.9rem; }
+        }
+      `}</style>
+
+      <section className="container">
+        <div className="stats-section">
+          <div className="row align-items-center">
+            <div className="col-md-6 col-12">
+              <h1 className="stats-heading">Trust With Confidence</h1>
+
+              <h2 className="stats-subheading">Customer-First Always</h2>
+              <p className="stats-text">
+                13 million customers trust BullEdge with $766 million worth of equity investments.
+              </p>
+
+              <h2 className="stats-subheading">No Spam or Gimmicks</h2>
+              <p className="stats-text">
+                No gimmicks or push notifications — just high-quality apps at your pace.
+              </p>
+
+              <h2 className="stats-subheading">The BullEdge Universe</h2>
+              <p className="stats-text">
+                Not just an app — a complete ecosystem. Our investments in 30+ fintech startups offer you personalized services.
+              </p>
+
+              <h2 className="stats-subheading">Do Better with Money</h2>
+              <p className="stats-text">
+                With initiatives like Nudge and Kill Switch, we help you improve financial discipline.
+              </p>
             </div>
+
+            <div className="col-md-6 col-12 text-center mt-4 mt-md-0">
+              <img
+                src="media/images/ecosystem.png"
+                alt="Ecosystem"
+                className="stats-image img-fluid"
+              />
+              <div className="mt-4">
+                <a href="/product" className="stats-link">
+                  Explore Products <i className="fa fa-long-arrow-right" />
+                </a>
+                <a href="https://bull-edge-kite.vercel.app" className="stats-link">
+                  Try Kite <i className="fa fa-long-arrow-right" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-    );
+      </section>
+    </>
+  );
 }
 
 export default Stats;

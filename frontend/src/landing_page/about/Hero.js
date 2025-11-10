@@ -1,66 +1,140 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 function Hero() {
   return (
-    <div className="container mb-5">
-      <div className="row ">
-        {" "}
-        <h2 className="fs-4  mb-5 p-5 text-center border-bottom">
-          We pioneered the discount broking model in India.
-          <br />
-          Now, we are breaking ground with our technology.
-        </h2>
-      </div>
+    <>
+      <style>{`
+        .hero-container {
+          background: linear-gradient(135deg, #ffffff 0%, #f8f9fb 100%);
+          border-radius: 20px;
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+          padding: 4rem 2rem;
+          margin-top: 2rem;
+        }
 
-      <div className="row">
-        <div className="col-2"></div>
-        <div className="col-md-4 col-12 pb-3 ps-3 pe-3 me-2 mt-4 fs-6">
-          <p className="mb-3">
-            We kick-started operations on the 1st of November , 2025 with the
-            goal of breaking all barriers that traders and investors face in
-            India in terms of cost, support, and technology. We named the
-            company <b>BullEdge</b>, a combination of "Bull" and "Edge", the
-            English word for barrier.
-          </p>
+        .hero-heading {
+          font-weight: 500;
+          color: #1a1a1a;
+          text-align: center;
+          letter-spacing: -0.3px;
+          line-height: 1.6;
+          margin-bottom: 3rem;
+          position: relative;
+        }
 
-          <p className="mb-3">
-            Today, our disruptive pricing models and in-house technology have
-            made us the biggest stock broker in India.
-          </p>
+        .hero-heading::after {
+          content: "";
+          position: absolute;
+          bottom: -1rem;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 90px;
+          height: 2px;
+          background: linear-gradient(90deg, transparent, #0d6efd, transparent);
+        }
 
-          <p className="mb-3">
-            Over 1.6+ crore clients place billions of orders every year through
-            our powerful ecosystem of investment platforms, contributing over
-            15% of all Indian retail trading volumes
-          </p>
+        .hero-content {
+          color: #555;
+          line-height: 1.8;
+          font-size: 1.05rem;
+        }
+
+        .hero-content p {
+          margin-bottom: 1.5rem;
+        }
+
+        .hero-content a {
+          font-weight: 600;
+          color: #0d6efd;
+          text-decoration: none;
+          border-bottom: 1px solid transparent;
+          transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .hero-content a:hover {
+          color: #084298;
+          border-color: #084298;
+        }
+
+        @media (max-width: 768px) {
+          .hero-container {
+            padding: 2rem 1rem;
+          }
+
+          .hero-heading {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+          }
+
+          .hero-content {
+            font-size: 1rem;
+          }
+        }
+      `}</style>
+
+      <section className="hero-container container mb-5">
+        <div className="row">
+          <h2 className="hero-heading fs-4 px-3">
+            We pioneered the discount broking model in India.
+            <br />
+            Now, we are breaking ground with our technology.
+          </h2>
         </div>
 
-        <div className="col-md-4 col-12 fs-6 pb-3 ps-3 mt-4 pe-3">
-          <p className="mb-3">
-            In addition, we run a number of popular open online educational and
-            community initiatives to empower retail traders and investors.
-          </p>
+        <div className="row mt-4">
+          <div className="col-lg-1"></div>
 
-          <p className="mb-3">
-            <Link
-              to="https://vistara-lime.vercel.app"
-              style={{ textDecoration: "none", color: "#001affff" }}
-            >
-              Vistara
-            </Link>
-            , our fintech fund and incubator, has invested in several fintech
-            startups with the goal of growing the Indian capital markets.
-          </p>
+          <div className="col-md-5 col-12 hero-content">
+            <p>
+              We kick-started operations on the 1st of November, 2025 with the goal
+              of breaking all barriers that traders and investors face in India in
+              terms of cost, support, and technology. We named the company{" "}
+              <strong>BullEdge</strong>, a combination of “Bull” and “Edge”, the
+              English word for barrier.
+            </p>
 
-          <p className="mb-3">
-            And yet, we are always up to something new every day. Catch up on
-            the latest updates on our blog or see what the media is saying about
-            us or learn more about our business and product philosophies.
-          </p>
+            <p>
+              Today, our transparent pricing models and in-house technology have
+              made us the largest stock broker in India.
+            </p>
+
+            <p>
+              Over <strong>1.6 crore+</strong> clients place billions of orders
+              every year through our powerful ecosystem of investment platforms,
+              contributing over <strong>15%</strong> of all Indian retail trading
+              volumes.
+            </p>
+          </div>
+
+          <div className="col-md-5 col-12 hero-content mt-4 mt-md-0">
+            <p>
+              We also run a number of open online educational and community
+              initiatives to empower retail traders and investors.
+            </p>
+
+            <p>
+              <Link
+                to="https://vistara-lime.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Vistara
+              </Link>
+              , our fintech fund and incubator, has invested in multiple fintech
+              startups with the goal of expanding India’s capital markets.
+            </p>
+
+            <p>
+              We’re always building something new — check out our blog for updates,
+              media coverage, and insights into our products and philosophy.
+            </p>
+          </div>
+
+          <div className="col-lg-1"></div>
         </div>
-        <div className="col-2"></div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
 

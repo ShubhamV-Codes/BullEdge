@@ -1,23 +1,91 @@
-import React from 'react'
+import React from "react";
+
 function Education() {
-    return (
-        <div className="container">
-            <div className="row">
-                <div className="col-md-6 col-12">
-                    <img src="media/images/education.svg" style={{ width: "70%" }} alt="Education" />
-                </div>
-                <div className="col-md-6 col-12 p-5">
-                    <h1 className="fs-2 mb-5">Free and open market education</h1>
-                    <p className="mb-1"> Varsity, the largest online stock market education book in the world<br />covering everything from the basics to advanced trading.</p>
-                    <a href="/not-available" style={{ textDecoration: "none" }} className="mb-5"> Versity <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+  return (
+    <>
+      <style>{`
+        .education-section {
+          background: linear-gradient(135deg, #ffffff 0%, #f8f9fb 100%);
+          border-radius: 20px;
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+          padding: 3rem 2rem;
+          margin-top: 3rem;
+        }
 
-                    <p className="mt-4 mb-1"> Trading Q&A, the most active Trading and investment community in <br />india for all your market related queries.</p>
-                    <a href="/not-available" style={{ textDecoration: "none" }} className="mb-5"> Trading Q&A <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        .education-heading {
+          font-size: 2.3rem;
+          font-weight: 700;
+          color: #1a1a1a;
+          margin-bottom: 1.5rem;
+        }
 
-                </div>
+        .education-text {
+          font-size: 1.05rem;
+          color: #555;
+          line-height: 1.8;
+        }
+
+        .education-link {
+          color: #0d6efd;
+          font-weight: 600;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          margin-top: 1rem;
+          transition: color 0.3s ease;
+        }
+
+        .education-link:hover {
+          color: #084298;
+        }
+
+        .education-image {
+          max-width: 80%;
+          filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.08));
+        }
+
+        @media (max-width: 768px) {
+          .education-heading { font-size: 1.9rem; }
+        }
+      `}</style>
+
+      <section className="container py-5">
+        <div className="education-section">
+          <div className="row align-items-center">
+            <div className="col-md-6 text-center mb-4 mb-md-0">
+              <img
+                src="media/images/education.svg"
+                alt="Education"
+                className="education-image img-fluid"
+              />
             </div>
+
+            <div className="col-md-6">
+              <h1 className="education-heading">
+                Free and Open Market Education
+              </h1>
+
+              <p className="education-text">
+                <strong>Varsity</strong> — the largest online stock market education
+                resource in the world, covering everything from basics to advanced trading.
+              </p>
+              <a href="/not-available" className="education-link">
+                Visit Varsity <i className="fa fa-long-arrow-right ms-1" />
+              </a>
+
+              <p className="education-text mt-4">
+                <strong>Trading Q&A</strong> — India’s most active trading and investment
+                community for all your market-related queries.
+              </p>
+              <a href="/not-available" className="education-link">
+                Visit Trading Q&A <i className="fa fa-long-arrow-right ms-1" />
+              </a>
+            </div>
+          </div>
         </div>
-    );
+      </section>
+    </>
+  );
 }
 
 export default Education;

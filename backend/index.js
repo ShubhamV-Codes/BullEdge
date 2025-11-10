@@ -15,8 +15,10 @@ const MONGO_URI = process.env.MONGO_URL;
 
 const app = express();
 
-// Middlewares
-app.use(cors());
+// Cors Middlewares
+app.use(cors({
+  origin:"*"
+}));
 app.use(express.json());  // replaces body-parser
 
 // MongoDB Connection
